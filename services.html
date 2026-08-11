@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Salon Services | LUMÉA Unisex Salon</title>
+  <meta name="description" content="Explore LUMÉA's interactive salon service catalogue for men, women, boys and girls including haircuts, styling, grooming, beauty, nails and treatments.">
+  <meta name="theme-color" content="#171614">
+
+  <meta property="og:title" content="LUMÉA Salon Services">
+  <meta property="og:description" content="Browse hair, beauty and grooming services for the whole family.">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+
+<body data-page="services">
+
+  <div id="site-header"></div>
+
+  <main>
+
+    <section class="page-hero page-hero--services">
+      <div class="container page-hero__content">
+        <span class="eyebrow">THE SERVICE EDIT</span>
+        <h1>Choose your<br><em>perfect service.</em></h1>
+        <p>
+          Start with who you're booking for, choose a category and discover
+          the exact service that fits your look.
+        </p>
+      </div>
+    </section>
+
+    <section class="services-catalogue section">
+
+      <div class="container">
+
+        <div class="service-step reveal">
+          <div class="step-heading">
+            <span class="step-number">01</span>
+            <div>
+              <span class="eyebrow">CUSTOMER TYPE</span>
+              <h2>Who are we styling?</h2>
+            </div>
+          </div>
+
+          <div class="customer-chips" id="customerChips">
+            <button class="customer-chip active" data-type="all">All Services</button>
+            <button class="customer-chip" data-type="men">Men</button>
+            <button class="customer-chip" data-type="women">Women</button>
+            <button class="customer-chip" data-type="boys">Boys</button>
+            <button class="customer-chip" data-type="girls">Girls</button>
+          </div>
+        </div>
+
+        <div class="service-step reveal">
+          <div class="step-heading">
+            <span class="step-number">02</span>
+            <div>
+              <span class="eyebrow">SERVICE CATEGORY</span>
+              <h2>What would you like?</h2>
+            </div>
+          </div>
+
+          <div id="categoryGrid" class="category-grid"></div>
+        </div>
+
+        <div class="service-step service-results reveal" id="serviceResults">
+
+          <div class="service-results__top">
+            <div>
+              <span class="eyebrow">AVAILABLE SERVICES</span>
+              <h2 id="serviceHeading">Choose a category</h2>
+            </div>
+
+            <button id="backToCategories" class="text-button">
+              ← Back to Categories
+            </button>
+          </div>
+
+          <div class="breadcrumb" id="serviceBreadcrumb">
+            Services <span>›</span> All Services
+          </div>
+
+          <div id="serviceCards" class="service-cards"></div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="section section--cream">
+      <div class="container split-section">
+
+        <div class="split-content reveal">
+          <span class="eyebrow">NEED A RECOMMENDATION?</span>
+          <h2>Not sure what <em>suits you?</em></h2>
+          <p>
+            Tell us what you're looking for and our team can help you choose
+            the right service, style and treatment for your needs.
+          </p>
+
+          <button class="whatsapp-btn whatsapp-btn--dark"
+                  data-whatsapp="Hello, I would like help choosing the right salon service for me.">
+            Ask on WhatsApp
+          </button>
+        </div>
+
+        <div class="split-image reveal">
+          <img src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?auto=format&fit=crop&w=1100&q=85"
+               alt="Professional hair styling consultation" loading="lazy">
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <div id="site-footer"></div>
+
+</body>
+</html>

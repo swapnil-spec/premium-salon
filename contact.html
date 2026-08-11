@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Contact & Book Appointment | LUMÉA Salon</title>
+  <meta name="description" content="Contact LUMÉA Salon, check opening hours and book a hair, beauty or grooming appointment through WhatsApp.">
+  <meta name="theme-color" content="#171614">
+
+  <meta property="og:title" content="Contact LUMÉA Salon">
+  <meta property="og:description" content="Book an appointment or contact LUMÉA Salon through WhatsApp.">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+
+<body data-page="contact">
+
+  <div id="site-header"></div>
+
+  <main>
+
+    <section class="page-hero page-hero--contact">
+      <div class="container page-hero__content">
+        <span class="eyebrow">CONTACT LUMÉA</span>
+        <h1>Let's make your<br><em>next appointment.</em></h1>
+        <p>
+          Book through WhatsApp, call us directly or send your appointment details below.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" id="appointment">
+      <div class="container contact-layout">
+
+        <div class="contact-info reveal">
+
+          <span class="eyebrow">GET IN TOUCH</span>
+          <h2>We'd love to <em>hear from you.</em></h2>
+
+          <div class="contact-detail">
+            <span class="contact-detail__icon">⌖</span>
+            <div>
+              <small>Salon Address</small>
+              <strong>123 Your Main Road, Your Locality, Mumbai, Maharashtra</strong>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <span class="contact-detail__icon">☎</span>
+            <div>
+              <small>Phone</small>
+              <a href="tel:+9191XXXXXXXX">+91 91XXXXXXXX</a>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <span class="contact-detail__icon">◔</span>
+            <div>
+              <small>WhatsApp</small>
+              <button class="contact-link-button" data-whatsapp="Hello, I would like to enquire about LUMÉA Salon.">
+                Chat with us
+              </button>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <span class="contact-detail__icon">@</span>
+            <div>
+              <small>Email</small>
+              <a href="mailto:hello@your-salon.com">hello@your-salon.com</a>
+            </div>
+          </div>
+
+          <div class="opening-hours">
+            <span class="eyebrow">OPENING HOURS</span>
+
+            <div><span>Monday – Friday</span><strong>10:00 AM – 8:00 PM</strong></div>
+            <div><span>Saturday</span><strong>10:00 AM – 9:00 PM</strong></div>
+            <div><span>Sunday</span><strong>11:00 AM – 7:00 PM</strong></div>
+          </div>
+
+        </div>
+
+        <div class="appointment-card reveal">
+
+          <div class="appointment-card__heading">
+            <span class="eyebrow">BOOK AN APPOINTMENT</span>
+            <h2>Tell us what you need.</h2>
+            <p>
+              Submit the form and we'll prepare a WhatsApp message for you.
+            </p>
+          </div>
+
+          <form id="appointmentForm" novalidate>
+
+            <div class="form-grid">
+
+              <div class="form-field">
+                <label for="name">Your Name *</label>
+                <input type="text" id="name" name="name" autocomplete="name" required>
+              </div>
+
+              <div class="form-field">
+                <label for="phone">Phone Number *</label>
+                <input type="tel" id="phone" name="phone"
+                       inputmode="tel" autocomplete="tel"
+                       pattern="[0-9+\-\s()]{10,15}" required>
+              </div>
+
+              <div class="form-field">
+                <label for="service">Service *</label>
+                <select id="service" name="service" required>
+                  <option value="">Select a service</option>
+                  <option>Haircut</option>
+                  <option>Hair Styling</option>
+                  <option>Beard & Shave</option>
+                  <option>Hair Colour</option>
+                  <option>Hair Treatment</option>
+                  <option>Facial & Skin</option>
+                  <option>Threading</option>
+                  <option>Waxing</option>
+                  <option>Nails</option>
+                  <option>Makeup</option>
+                  <option>Grooming</option>
+                  <option>Massage & Spa</option>
+                </select>
+              </div>
+
+              <div class="form-field">
+                <label for="date">Preferred Date *</label>
+                <input type="date" id="date" name="date" required>
+              </div>
+
+              <div class="form-field">
+                <label for="time">Preferred Time *</label>
+                <input type="time" id="time" name="time" required>
+              </div>
+
+              <div class="form-field form-field--full">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5"
+                          placeholder="Anything you'd like us to know?"></textarea>
+              </div>
+
+            </div>
+
+            <p id="formMessage" class="form-message" role="alert"></p>
+
+            <button type="submit" class="btn btn--dark btn--full">
+              Continue on WhatsApp <span>↗</span>
+            </button>
+
+            <small class="form-note">
+              Your information is not stored on this website. The appointment
+              details are opened in WhatsApp for you to send.
+            </small>
+
+          </form>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- MAP -->
+    <section class="map-section">
+      <div class="map-wrap">
+        <iframe
+          title="LUMÉA Salon location"
+          src="https://www.google.com/maps?q=123%20Your%20Main%20Road%2C%20Mumbai%2C%20Maharashtra&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+
+        <div class="map-overlay-card">
+          <span class="eyebrow">FIND US</span>
+          <h3>LUMÉA Salon</h3>
+          <p>123 Your Main Road<br>Mumbai, Maharashtra</p>
+          <a href="https://www.google.com/maps?q=123%20Your%20Main%20Road%2C%20Mumbai%2C%20Maharashtra"
+             target="_blank" rel="noopener" class="text-link">
+            Open in Google Maps →
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <div id="site-footer"></div>
+
+</body>
+</html>
